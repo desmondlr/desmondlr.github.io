@@ -1,0 +1,20 @@
+---
+title: false
+styles: true
+---
+
+@import "alembic";
+
+.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
+  color: #080708;
+  font-family: "Merriweather", serif;
+  font-feature-settings: "dlig", "liga", "lnum", "kern";
+  font-style: normal;
+  font-weight: 700;
+}
+// .typeset h3,.typeset h4, .typeset h5, .typeset h6 {
+//   -webkit-text-stroke: 1px #080708;
+// }
+// .typeset h3,.typeset h4, .typeset h5, .typeset h6 {
+//   -webkit-text-stroke: 1px #080708;
+// }
