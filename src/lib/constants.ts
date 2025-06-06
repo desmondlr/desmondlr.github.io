@@ -24,13 +24,13 @@ type DefaultConfigurationType = {
 }
 
 export const DEFAULT_CONFIGURATION: DefaultConfigurationType = {
-  baseUrl: astroConfig.site || 'https://getcvfolio.com',
+  baseUrl: astroConfig.site || 'https://desmondlr.github.io',
   author: {
     avatar,
-    name: 'Javier Diaz Chamorro',
-    headline: 'Engineering and Design',
-    username: 'coderdiaz',
-    location: 'Mexico City',
+    name: 'Desmond Larsen-Rosner',
+    headline: 'Software Development, Spatial Computing and HCI',
+    username: 'desmondlr',
+    location: 'Calgary and Remote',
     pronouns: 'He/Him',
   },
   seo: {

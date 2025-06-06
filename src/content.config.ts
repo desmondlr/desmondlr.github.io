@@ -44,20 +44,20 @@ const jobCollection = defineCollection({
     location: z.string(),
     from: z.number(),
     to: z.number().or(z.enum(['Now'])),
-    url: z.string(),
+    url: z.string().optional(),
   }),
 });
 
-const talkCollection = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/talks' }),
-  schema: z.object({
-    title: z.string(),
-    year: z.number(),
-    event: z.string(),
-    location: z.string(),
-    url: z.string(),
-  }),
-});
+// const talkCollection = defineCollection({
+//   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/talks' }),
+//   schema: z.object({
+//     title: z.string(),
+//     year: z.number(),
+//     event: z.string(),
+//     location: z.string(),
+//     url: z.string(),
+//   }),
+// });
 
 const postCollection = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/posts' }),
@@ -73,6 +73,6 @@ export const collections = {
   pages: pageCollection,
   links: linkCollection,
   jobs: jobCollection,
-  talks: talkCollection,
+  //talks: talkCollection,
   posts: postCollection,
 };
