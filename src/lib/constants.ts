@@ -1,5 +1,5 @@
 import type { z } from 'astro/zod';
-import MetaDefaultImage from '@/assets/images/meta-default.jpg';
+import MetaDefaultImage from '@/assets/images/logo.svg';
 import avatar from '@/assets/images/avatar.jpeg';
 import type { seoSchemaWithoutImage } from '@/content.config';
 import astroConfig from 'astro.config.mjs';
@@ -29,7 +29,7 @@ export const DEFAULT_CONFIGURATION: DefaultConfigurationType = {
     avatar,
     name: 'Desmond Larsen-Rosner',
     headline: 'Software Development, Spatial Computing and HCI',
-    username: 'desmondlr',
+    username: 'desmondlr@gmail.com',
     location: 'Calgary and Remote',
     pronouns: 'He/Him',
   },
