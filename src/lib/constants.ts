@@ -1,5 +1,5 @@
 import type { z } from 'astro/zod';
-import MetaDefaultImage from '@/assets/images/logo.svg';
+import MetaDefaultImage from '@/assets/images/logo.png';
 import avatar from '@/assets/images/avatar.jpeg';
 import type { seoSchemaWithoutImage } from '@/content.config';
 import astroConfig from 'astro.config.mjs';
@@ -34,8 +34,8 @@ export const DEFAULT_CONFIGURATION: DefaultConfigurationType = {
     pronouns: 'He/Him',
   },
   seo: {
-    title: 'CV Folio — An Astro template inspired on Read.cv',
-    description: 'Clean and aesthetic portfolio website for developers and designers',
+    title: 'Desmond Larsen-Rosner - Software Development, Spatial Computing and HCI',
+    description: 'Portfolio of Desmond\'s projects in Software Development, Spatial Computing and HCI',
     type: 'website',
     image: MetaDefaultImage,
     twitter: {
